@@ -15,7 +15,7 @@
 <body>
 <div id="map"></div>
 <script>
-mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lkZHk1IiwiYSI6ImNtZjczNDRldTBuMGQyanFzdnl4YWFmeWgifQ.FB1TNdmdlBsMNI21m9lijg';
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v12',

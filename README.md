@@ -25,6 +25,18 @@ const map = new mapboxgl.Map({
 
 // Add marker example
 new mapboxgl.Marker().setLngLat([3.3267, 7.1543]).setPopup(new mapboxgl.Popup().setText("Library")).addTo(map);
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css" />
+
+
+const directions = new MapboxDirections({
+  accessToken: mapboxgl.accessToken,
+  unit: 'metric',
+  profile: 'mapbox/walking'
+});
+map.addControl(directions, 'top-left');
+
+
 </script>
 </body>
 </html>
